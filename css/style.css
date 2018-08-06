@@ -1,5 +1,5 @@
 ﻿body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: sans-serif;
     line-height: 1.5em
@@ -14,11 +14,13 @@
 }
 .container-top{
     width: 90%;
+    margin: auto;
 }
 header ul{
     list-style-type: none;
+    padding: 0;
 }
-header li, .dropbtn, li.dropdown{
+header li, .dropbtn, li.dropdown {
     display: inline-block;
     padding: 8px 16px;
 }
@@ -66,6 +68,7 @@ header li a:hover, .dropdown:hover .dropbtn{
     background-image: url("../images/banner-1.jpeg");
     width: 1440px;
     height: 400px;
+    width: 100%;
 }
 #title, #tagline{
     color: white;
@@ -73,7 +76,7 @@ header li a:hover, .dropdown:hover .dropbtn{
     padding-left: 100px;
     line-height: normal;
 }
-#title{
+#title {
     padding-top: 80px;
     padding-bottom: 10px;
     font-size: 36px;
@@ -81,7 +84,7 @@ header li a:hover, .dropdown:hover .dropbtn{
 #tagline{
     font-size: 18px;
 }
-.btn-grab{
+.btn-grab {
     margin-left: 100px;
     margin-top: 50px;
     padding: 10px;
@@ -90,40 +93,48 @@ header li a:hover, .dropdown:hover .dropbtn{
     border: 1px solid #00B13F;
     border-radius: 5px;
 }
-.container-grab-works, .anywhere-tag{
+
+.container-grab-works, .anywhere-tag {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container-grab-works{
+
+.container-grab-works {
     color: #00B13F;
     font-size: 36px;
 }
-.anywhere-tag{
-    color:#464B57;
+
+.anywhere-tag {
+    color: #464B57;
     font-size: 20px;
 }
-.hand-image{
+
+.hand-image {
     position: relative;
     height: 500px;
-    width:350px;
+    width: 350px;
     margin-left: 50%;
 }
-.booking-process-image, .booking-process{
+
+.booking-process-image, .booking-process {
     width: 49%;
     height: 500px;
     float: left;
 }
-.content-font-title{
+
+.content-font-title {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-.booking-process .content-font-title:hover{
+
+.booking-process .content-font-title:hover {
     color: #00B13F;
 }
-.container-ride{
+
+.container-ride {
     background-color: #00B13F;
     color: white;
     width: 100%;
@@ -135,7 +146,8 @@ header li a:hover, .dropdown:hover .dropbtn{
     line-height: normal;
     margin: 0;
 }
-.click-learn{
+
+.click-learn {
     padding: 15px;
     background-color: white;
     color: #00B13F;
@@ -144,21 +156,46 @@ header li a:hover, .dropdown:hover .dropbtn{
     font-size: 20px;
     border: none;
 }
-.Freedom-to-choose{
+
+#freedom-to-choose {
     background-image: url(../images/car-picture.jpeg);
     margin: 0;
     text-align: center;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    height: 300px;
+    height: 400px;
 }
-.Freedom-slogan{
-    font-weight: bold;
-    font-size: 36px;
+
+    #freedom-to-choose h3 {
+        margin-top: 0;
+        padding-top: 30px;
+        color: white;
+        font-size: 36px;
+    }
+
+.content-background-gray {
+    width: 20%;
+    height: 150px;
+    background-color: #464B57;
+    opacity: 0.8;
+    margin: auto;
+    text-align: center;
 }
-.container-4{
-    margin: 0;
+
+.icon:hover {
+    background-color: #00B13F;
+    border-radius: 38px;
+}
+
+#freedom-to-choose li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+icon {
+    border: 1px solid #00B13F;
+    border-radius: 50%;
 }
 
 
@@ -185,19 +222,36 @@ header li a:hover, .dropdown:hover .dropbtn{
     width: 33.33333333%;
 }
 
-#latest-news .card1 div, #latest-news .card2 div {
-    height: 350px;
-    margin: 15px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+    #latest-news .div-bgr {
+        height: 350px;
+        margin: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative;
+    }
 
 #latest-news .summary{
     color: white;
-    height: 50px;
+    background-color: black;
+    opacity: 0.8;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
+#view-more {
+    text-align: center;
+}
+
+#view-more a {
+    text-decoration: none;
+    background-color: #2196F3;
+    padding: 5px 15px;
+    color: white;
+}
 
 
 /*footer style ****************************************************************/
